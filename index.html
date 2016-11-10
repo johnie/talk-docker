@@ -31,7 +31,7 @@
 				</section>
 				<section>
 					<h3>What is docker?</h3>
-					<p>Docker is an open-source project to easily create lightweight, portable, self-sufficient containers from any application</p>
+					<p>Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries – anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.</p>
 				</section>
 				<section>
 					<h3>It works on my machine..?</h3>
@@ -193,7 +193,7 @@ EXPOSE 80
 $ docker build -t johnie/helloworld .
 
 $ docker run -p 80:80 \ 
-	-v $(PWD)/src:/var/www/html johnie/helloworld
+	-v $(PWD)/src:/var/www/html/ johnie/helloworld
 				</code></pre>
 				</section>
 				<section>
