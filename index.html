@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Docker | It works on my machine?</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/atom-one-dark.css">
+		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<img src="lib/images/c9lo.svg" width="120px" height="auto" class="logo">
+			<div class="slides">
+				<section data-background-image="lib/images/bg3.png">
+					<img src="lib/images/brand-full.svg" width="600px" height="auto">
+				</section>
+				<section>
+					<h3>What is docker?</h3>
+					<p>Docker is an open-source project to easily create lightweight, portable, self-sufficient containers from any application</p>
+				</section>
+				<section>
+					<h3>It works on my machine..?</h3>
+				  <ol class="bulletpoints">
+				  	<li class="fragment fade-in">Same environment.</li>
+				  	<li class="fragment fade-in">Sandbox Projects.</li>
+				  	<li class="fragment fade-in">It just works!</li>
+				  </ol>
+				</section>
+				<!-- /VM -->
+				<section>
+					<h3>Virtual Machines</h3>
+
+					<div class="blocks">
+						<div class="parent-block">
+							<div class="parent-block fragment" data-fragment-index="6">
+								<div class="small-block">
+									<p>APP</p>
+									<img src="lib/images/app_red.svg" height="auto" width="50%">
+								</div>
+								<div class="small-block">
+									<p>APP</p>
+									<img src="lib/images/cli_red.svg" height="auto" width="50%">
+								</div>
+							</div>
+							<div class="parent-block fragment" data-fragment-index="5">
+								<div class="small-block">
+									<p>bins/libs</p>
+									<img src="lib/images/plugin_red.svg" height="auto" width="50%">
+								</div>
+								<div class="small-block">
+									<p>bins/libs</p>
+									<img src="lib/images/plugin_red.svg" height="auto" width="50%">
+								</div>
+							</div>
+							<div class="parent-block fragment" data-fragment-index="4">
+								<div class="small-block">
+									<p>kernel</p>
+									<img src="lib/images/kernel_red.svg">
+								</div>
+								<div class="small-block">
+									<p>kernel</p>
+									<img src="lib/images/kernel_red.svg">
+								</div>
+							</div>
+							<div class="describe-block-red fragment" data-fragment-index="7">
+								<p>
+									VM
+								</p>
+							</div>
+						</div>
+						<div class="big-block fragment" data-fragment-index="3">
+							<p>Hypervisor</p>
+							<img src="lib/images/supervisor.svg">
+						</div>
+						<div class="big-block fragment" data-fragment-index="2">
+							<p>Host OS</p>
+							<img src="lib/images/hostos.svg">
+						</div>
+						<div class="big-block fragment" data-fragment-index="1">
+							<p>Server / Machine</p>
+							<img src="lib/images/machine.svg">
+						</div>
+					</div>
+				</section>
+				<!-- /Docker -->
+				<section>
+					<h3>Docker</h3>
+
+					<div class="blocks">
+						<div class="parent-block">
+							<div class="parent-block fragment" data-fragment-index="4">
+								<div class="small-block">
+									<p>APP</p>
+									<img src="lib/images/app_blue.svg" height="auto" width="50%">
+								</div>
+								<div class="small-block">
+									<p>APP</p>
+									<img src="lib/images/cli_blue.svg" height="auto" width="50%">
+								</div>
+							</div>
+							<div class="parent-block fragment" data-fragment-index="3">
+								<div class="small-block">
+									<p>bins/libs</p>
+									<img src="lib/images/plugin_blue.svg" height="auto" width="50%">
+								</div>
+								<div class="small-block">
+									<p>bins/libs</p>
+									<img src="lib/images/plugin_blue.svg" height="auto" width="50%">
+								</div>
+							</div>
+							<div class="describe-block-blue fragment" data-fragment-index="5">
+								<p>
+									Containers
+								</p>
+							</div>
+						</div>
+						<div class="big-block fragment" data-fragment-index="2">
+							<p>Host OS</p>
+							<img src="lib/images/hostos.svg">
+						</div>
+						<div class="big-block fragment" data-fragment-index="1">
+							<p>Server / Machine</p>
+							<img src="lib/images/machine.svg">
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3><span style="color: #f149aa;">VM</span> | <span style="color: #3ee6d9;">Docker</span></h3>
+					<ul style="width: 50%; color: #f149aa; font-size: 20px; float: left; list-style: none; margin: 0; padding: 0; line-height: 2">
+						<li>Runs operating systems</li>
+						<li>Heavyweight isolated virtual machines	</li>
+						<li>VMs start via a full boot-up process	</li>
+						<li>Platform-oriented solution	</li>
+						<li>Optimized for generality	</li>
+					</ul>
+					<ul style="width: 50%; color: #3ee6d9; font-size: 20px; float: left; list-style: none; margin: 0; padding: 0; line-height: 2">
+						<li>Runs processes</li>
+						<li>Lightweight kernel namespaces</li>
+						<li>Very fast namespace + process creation</li>
+						<li>Service-oriented solution</li>
+						<li>Optimized for minimalism and speed</li>
+					</ul>
+				</section>
+				<section>
+					<h3 style="color: #3ee6d9;" class="fragment" data-fragment-index="1">Container</h3>
+					<p class="fragment" data-fragment-index="2">RUN FROM</p>
+					<h3 style="color: #f823aa;" class="fragment" data-fragment-index="3">Image</h3>
+					<div class="fragment" data-fragment-index="4">
+						<svg viewBox="0 0 16 16" id="mesosphere-icons-mini-arrow-down" fill="white" style="width: 40px;"><path d="M8.998 12.295l2.648-2.649.708.708-3.5 3.5-.354.353-.354-.353-3.5-3.5.708-.708 2.644 2.644V1h1v11.295z" fill-rule="evenodd"></path></svg>
+					</div>
+					<ul class="fragment" data-fragment-index="4">
+						<li>OS</li>
+						<li>Software</li>
+						<li>Application Code</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Dockerfile</h3>
+					<div>
+						<img src="lib/images/dockerfile.svg" style="width: 150px;" class="fragment" data-fragment-index="1">
+						<p class="fragment" data-fragment-index="2">BUILD</p>
+						<h3 style="color: #f823aa;" class="fragment" data-fragment-index="2">Image</h3>
+						<p class="fragment" data-fragment-index="3">RUN</p>
+						<h3 style="color: #3ee6d9;" class="fragment" data-fragment-index="3">Container</h3>
+					</div>
+				</section>
+				<section>
+					<h3>example</h3>
+					<pre style="box-shadow: none;"><code>
+FROM php:7.0-apache
+MAINTAINER  Johnie Hjelm &lt;johnie.hjelm@cloudnine.se&gt;
+
+COPY src/ /var/www/html/
+
+EXPOSE 80
+					</code></pre>
+				<pre style="box-shadow: none;"><code>
+$ docker build -t johnie/helloworld .
+
+$ docker run -p 80:80 \ 
+	-v $(PWD)/src:/var/www/html johnie/helloworld
+				</code></pre>
+				</section>
+				<section>
+					<h3>Docker hub</h3>
+					<a href="https://hub.docker.com">https://hub.docker.com</a>
+				</section>
+				<section data-background-color="#f1ffff" data-background-image="lib/images/nyan_whale.gif" data-background-size="50%" data-background-position="left bottom">
+						<img src="lib/images/c9lo_dark.svg" style="width: 400px;">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

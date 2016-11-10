@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="mesosphere-icons-jumbo-cli" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 53.9 53.9" style="enable-background:new 0 0 53.9 53.9;" xml:space="preserve" fill="#f149aa">
+<style type="text/css">
+	.st0{fill-opacity:0.2;}
+</style>
+<g id="Browser" transform="translate(2.000000, 4.000000)">
+	<path id="Outer-Stroke" d="M-1.1,47.9c0,0.5,0.4,1,0.9,1h50.3c0.5,0,0.9-0.4,0.9-1v-50c0-0.5-0.4-1-0.9-1H-0.2
+		c-0.5,0-0.9,0.4-0.9,1V47.9z M-0.2-4h50.3c1,0,1.8,0.9,1.8,1.9v50c0,1.1-0.8,1.9-1.8,1.9H-0.2c-1,0-1.8-0.9-1.8-1.9v-50
+		C-2-3.1-1.2-4-0.2-4z"/>
+	<path id="Top-Divider" d="M-0.2,2.7h50.3c1,0,1.8,0.2,1.8,0.5l0,0c0,0.3-0.8,0.5-1.8,0.5H-0.2c-1,0-1.8-0.2-1.8-0.5l0,0
+		C-2,2.9-1.2,2.7-0.2,2.7z"/>
+	<path id="Top-Fill" class="st0" d="M-0.2-4h50.3c1,0,1.8,0.9,1.8,1.9v3.8c0,1.1-0.8,1.9-1.8,1.9H-0.2c-1,0-1.8-0.9-1.8-1.9v-3.8
+		C-2-3.1-1.2-4-0.2-4z"/>
+</g>
+<rect id="_" x="13.2" y="28" width="8.8" height="0.7"/>
+<path id="Shape" d="M5.6,15.1l6.6,6.6v-0.5l-6.6,6.6l0.5,0.5l6.6-6.6l0.3-0.3l-0.3-0.3l-6.6-6.6L5.6,15.1L5.6,15.1z"/>
+</svg>
